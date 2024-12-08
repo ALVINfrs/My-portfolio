@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CDN Font-Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>My Personal Website</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="logo">Alvnfrss</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Main Content-->
+    <main>
+      <!--Hero Section-->
+      <section class="hero">
+        <h1>Hello,I'm <span class="highlight">Muhammad Alvin Faris</span></h1>
+        <p>
+          I am a third-semester student at Universitas Indraprasta PGRI,
+          passionate about web development and digital innovation. I specialize
+          in building responsive and user-friendly websites while exploring new
+          technologies to solve real-world challenges. My dedication to
+          continuous learning and problem-solving allows me to adapt to various
+          situations and deliver impactful solutions.
+        </p>
+        <button id="exploreBtn">Explore My Work</button>
+      </section>
+
+      <!--About Section-->
+
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="card">
+            <!-- Bio Section -->
+            <article class="bio">
+              <h3>Education & Skills</h3>
+              <p>
+                I am currently studying in my third semester at Universitas
+                Indraprasta PGRI, learning about the fundamentals of computer
+                science and web development. Alongside my formal education, I
+                have undertaken various online courses and personal projects to
+                expand my knowledge of modern web technologies such as
+                JavaScript, React, and Node.js.
+              </p>
+              <p>
+                I enjoy the process of solving complex problems, and I am always
+                looking for new challenges to help improve my skills and stay
+                updated with the latest trends in technology.
+              </p>
+            </article>
+          </div>
+
+          <div class="card">
+            <!-- Profile Section -->
+            <aside class="profile">
+              <img src="assets/image/profile.jpg" alt="Muhammad Alvin Faris" />
+              <h3>Muhammad Alvin Faris</h3>
+              <p>
+                I am currently pursuing my undergraduate degree in Information
+                Technology at Universitas Indraprasta PGRI. Since beginning my
+                journey in technology, I have been committed to enhancing my
+                skills in coding, design, and problem-solving. With hands-on
+                experience in creating dynamic web applications, I am confident
+                in utilizing JavaScript, React.js,Express js and Node.js to
+                deliver high-quality solutions.
+              </p>
+              <p>
+                My primary focus is on building web applications that are not
+                only functional but also visually appealing. Apart from my
+                technical skills, I value teamwork and enjoy collaborating with
+                others to bring creative ideas to life. I aim to become a
+                professional full-stack developer while contributing to
+                meaningful projects that impact communities positively.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!--Project Section-->
+      <section id="projects" class="projects">
+        <h2>My projects</h2>
+        <div class="carousel">
+          <div class="carousel-inner">
+            <article class="carousel-item active">
+              <img src="assets/image/project1.png" alt="Project 1" />
+              <h3>Coffee Shop Landing Page</h3>
+              <p>
+                A visually engaging landing page for a fictional coffee shop,
+                designed to attract customers with an intuitive layout and
+                aesthetic visuals. Built using HTML, CSS, and responsive design
+                principles.
+              </p>
+            </article>
+            <article class="carousel-item">
+              <img src="assets/image/project2.png" alt="Project2" />
+              <h3>Movie Web App</h3>
+              <p>
+                A React.js-based application that utilizes a public movie API to
+                provide users with a seamless browsing experience. Features
+                include search functionality, detailed movie descriptions, and
+                an interactive user interface.
+              </p>
+            </article>
+            <article class="carousel-item">
+              <img src="assets/image/project3.png" alt="Project3" />
+              <h3>Student CRUD App</h3>
+              <p>
+                A full-stack application for managing student data, leveraging
+                Express.js for the backend and MySQL for database management.
+                This project showcases my ability to handle database operations
+                and create dynamic web experiences.
+              </p>
+            </article>
+          </div>
+          <button class="carousel-control prev" id="prevBtn">&#100094;</button>
+          <button class="carousel-control next" id="nextBtn">&#100095;</button>
+        </div>
+      </section>
+
+      <!--Contact Section-->
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Full Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Your Email adress"
+            required
+          />
+
+          <label for="Message">Message</label>
+          <textarea
+            id="messege"
+            name="messege"
+            rows="5"
+            placeholder="Write Your message here..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <!--Sidebar-->
+    <aside class="social-sidebar">
+      <a
+        href="https://instagram.com/alvnfrs_/profilecard/?igsh=MTltYzM4cnlpdmQzbA"
+        target="_blank"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a
+        href="https://X.com/Alvnfrs_?s=08"
+        target="_blank"
+        aria-label="Twitter"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/alvin-faris-89060a31b/"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:alvifaris59@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/ALVINfrs" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a
+        href="https://wa.me/628979945242"
+        target="_blank"
+        aria-label="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </aside>
+    <!--footer-->
+    <footer>
+      <p>
+        &copy; 2024 Muhammad Alvin Faris. All rights reserved. | Built with
+        passion and dedication.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
