@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", updateCarousel);
 
+  // Smooth scroll ketika tombol Explore My Project diklik
   const exploreButton = document.getElementById("exploreBtn");
   const projectsSection = document.getElementById("projects");
 
@@ -32,4 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
       block: "start",
     });
   });
+});
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector("nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  hamburger.classList.toggle("open");
 });
